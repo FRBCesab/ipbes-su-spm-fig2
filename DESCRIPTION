@@ -1,0 +1,25 @@
+Package: ipbes.su.spm.fig1
+Type: Package
+Title: IPBES Sustainable Use Assessment - Figure SPM.1 
+Version: 1.0.0
+Authors@R: c(
+    person(given   = "Nicolas",
+           family  = "Casajus",
+           role    = c("aut", "cre"),
+           email   = "nicolas.casajus@fondationbiodiversite.fr",
+           comment = c(ORCID = "0000-0002-5537-5294")))
+Description: Code to reproduce the Figure SPM.1 of the IPBES Sustainable Use 
+    Assessment. This figure shows the percentage of Sustainable Development 
+    Goals (SDG) targets underpinning the sustainable use of of wild species.
+URL: https://github.com/frbcesab/ipbes-su-spm-fig1
+BugReports: https://github.com/frbcesab/ipbes-su-spm-fig1/issues
+License: CC BY 4.0
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
+Imports:
+    devtools,
+    here,
+    readxl,
+    remotes
