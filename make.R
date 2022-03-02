@@ -72,11 +72,11 @@ colnames(tab) <- tolower(colnames(tab))
 
 ## Plot ----
 
-# png(here::here("figures", "ipbes_su-spm_fig1.png"), width = 12, height = 6, 
-#     res = 600, pointsize = 14, units = "in")
+png(here::here("figures", "ipbes_su-spm_fig1.png"), width = 12, height = 6,
+    res = 600, pointsize = 14, units = "in")
 
-svg(here::here("figures", "ipbes_su-spm_fig1.svg"), width = 12, height = 6, 
-    pointsize = 14, family = "serif", bg = "transparent")
+# svg(here::here("figures", "ipbes_su-spm_fig1.svg"), width = 12, height = 6, 
+#     pointsize = 14, family = "serif", bg = "transparent")
 
 par(family = "serif", mar = c(2, 14, 0.5, 0.5), yaxs = "i", mgp = c(1, 0, 0), 
     col = "#333333")
@@ -85,6 +85,7 @@ plot(0, xlim = c(0, 100), ylim = c(.5, nrow(tab) + .5), type = "n", bty = "n",
      axes = FALSE, ann = FALSE)
 
 couleurs <- c("#673400", "#B5651D", "#cccccc", "white")
+couleurs <- c("#673400", "#673400", "#cccccc", "white")
 
 for (i in 1:nrow(tab)) {
   
